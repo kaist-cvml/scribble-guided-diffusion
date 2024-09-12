@@ -1,0 +1,57 @@
+**/__pycache__/
+**/__pycache__/*
+.vscode/
+.DS_Store
+*.tar
+*.zip
+run.sh
+*.sh
+*.pkl
+*.pt
+Glayout
+visual
+visual/*
+CLIP
+CLIP/*
+diffusers/
+diffusers/*
+
+# checkpoints
+checkpoints/
+checkpoints/*
+!checkpoints/stable_diffusion/*
+
+# configs
+configs/
+configs/*
+!configs/config.json
+
+# environments
+
+# examples
+examples/*
+!examples/example1/
+!examples/example1/*
+
+# experiments
+experiments/
+experiments/*
+model_comparisons/
+model_comparisons/*
+run_boxdiff.py
+run_densediff.py
+
+# results
+runs/*
+outputs/*
+!outputs/sgdiff/A_pod_of_dolphins_leaping_out_of_the_water_in_an_ocean_with_a_ship_on_the_background.png
+
+# test
+test/
+test/*
+
+# misc
+logs/
+logs/*
+
+
