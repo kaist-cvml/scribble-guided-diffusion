@@ -23,8 +23,7 @@ checkpoints/stable_diffusion/**
 !checkpoints/stable_diffusion/SD_input_conv_weight_bias.pth
 
 # configs
-configs/
-configs/*
+configs/**
 !configs/config.json
 
 # environments
@@ -44,7 +43,9 @@ run_densediff.py
 
 # results
 runs/*
-outputs/*
+outputs/**
+!outputs/sgdiff/
+outputs/sgdiff/*
 !outputs/sgdiff/A_pod_of_dolphins_leaping_out_of_the_water_in_an_ocean_with_a_ship_on_the_background.png
 
 # test
