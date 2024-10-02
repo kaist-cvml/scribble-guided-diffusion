@@ -1,5 +1,5 @@
 **/__pycache__/
-**/__pycache__/*
+**/__pycache__/**
 .vscode/
 .DS_Store
 *.tar
@@ -17,9 +17,10 @@ diffusers/
 diffusers/*
 
 # checkpoints
-checkpoints/
-checkpoints/*
-!checkpoints/stable_diffusion/*
+checkpoints/**
+!checkpoints/stable_diffusion
+checkpoints/stable_diffusion/**
+!checkpoints/stable_diffusion/SD_input_conv_weight_bias.pth
 
 # configs
 configs/
