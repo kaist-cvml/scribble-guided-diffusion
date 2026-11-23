@@ -220,6 +220,7 @@ if __name__ == "__main__":
     config_file = json.load(open(opt.config_from_file, "r"))
     
     for k, v in config_file["config"].items():
-        setattr(opt, k, v)
+        if getattr(opt, k, None) is None:  # options given on the command line take precedence
+            setattr(opt, k, v)
     
     main(opt, config_file)
