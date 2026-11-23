@@ -104,8 +104,10 @@ For `config.json`
 
 To run with user input text prompts:
 ```bash
-python inference.py --ckpt checkpoints/gligen/text-box/diffusion_pytorch_model.bin
+python inference.py --prompt "A pod of dolphins leaping out of the water in an ocean with a ship on the background" --ckpt checkpoints/gligen/text-box/diffusion_pytorch_model.bin
 ```
+
+Options given on the command line (`--prompt`, `--ckpt`) take precedence over the config file. Stroke filenames end with the index of the prompt token they ground (e.g. `dolphins_4`), so a new prompt needs its own `stroke_dir`.
 
 To use the default configuration file:
 ```bash
